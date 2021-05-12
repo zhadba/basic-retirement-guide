@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" 
+        rel="stylesheet"
+    >
+    <title>Planning for Retirement</title>
+    <link rel="stylesheet" href="style.css">
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
+</head>
+<body>
+<section class="header">       
+    <nav>
+        <div class = "main-title">
+            <h1>A YOUNG PERSON'S GUIDE TO RETIREMENT</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PLANNING METHODS</a></li>
+                <li><a href="">EXTERNAL RESOURCES</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>A Fundamental Repository of Useful Information<h1>
+        <p>It is never too early to begin planning for post-work living</p> 
+        <a href="#" class="btn">Find Out How</a>
+    </div>
+
+</section>
+
+<!--Planning Methods-->
+
+<section class="planning-methods">
+    <h1>PLANNING METHODS</h1>
+    <p>With so many models for planning, there is some flexibility in terms of the approach
+    that you choose to employ. Here are some general pointers that will aid the process regardless of model.</p>
+    <div class="row">
+        <div class="method-col">
+            <h3>test</h3>
+        </div>
+    </div>
+</section>
+
+<!--JS for Toggle Menu-->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+
+</html>
