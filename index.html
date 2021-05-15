@@ -12,7 +12,7 @@
     rel="stylesheet"  type='text/css'>
 </head>
 <body>
-<section class="header">       
+<section class="header" id="home">       
     <nav>
         <div class = "main-title">
             <h1>A YOUNG PERSON'S GUIDE TO RETIREMENT</h1>
@@ -20,9 +20,10 @@
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times-circle" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">PLANNING METHODS</a></li>
-                <li><a href="">EXTERNAL RESOURCES</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#planning-methods">PLANNING METHODS</a></li>
+                <li><a href="#external-resources">EXTERNAL RESOURCES</a></li>
+                <li><a href="#about">ABOUT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -31,14 +32,13 @@
     <div class="text-box">
         <h1>A Fundamental Repository of Useful Information<h1>
         <p>It is never too early to begin planning for post-work living</p> 
-        <a href="#" class="btn">Find Out How</a>
+        <a href="#planning-methods" class="btn">Find Out How</a>
     </div>
 
 </section>
-
 <!--Planning Methods-->
 
-<section class="planning-methods">
+<section class="planning-methods" id="planning-methods">
     <h1>PLANNING METHODS</h1>
     <p>With so many models for planning, there is some flexibility in terms of the approach
     that you choose to employ. Here are some general pointers that will aid the process regardless of model.</p>
@@ -46,19 +46,19 @@
         <div class="method-col">
             <h3>SAVING</h3>
             <p>Consider the basic principle of compound interest. A smaller amount of money 
-            invested <b>consistently</b> from a young age will be able to amass a larger value than a large amount
+            invested consistently from a young age will be able to amass a larger value than a large amount
             of money invested at a later age. Once the ability to open a bank account becomes available to you,
             it is best to set aside a few dollars every month to a dedicated retirement account. Over the course
-            of 30-40 years of constant compounding montly additions, a few thousand dollars can turn into <b>1 million</b>
+            of 30-40 years of constant compounding montly additions, a few thousand dollars can turn into 1 million
             or more (depending on the bank), leaving plenty of room for other priorities to be handled by pension funds. 
             </p>
         </div>
         <div class="method-col">
             <h3>EDUCATION</h3>
-            <p>Informing oneself of the many available options for planning and saving is the most <b>important</b>
-            step in retirement education. This site only covers the very basics. Consider reading up on <a href="#">these sites</a> 
+            <p>Informing oneself of the many available options for planning and saving is the most important
+            step in retirement education. This site only covers the very basics. Consider reading up on <a href="#external-resources">THESE SITES</a> 
             to be better prepared. Unfortunately, many school systems (at least in Texas) do not offer a standardized 
-            financial literacy class, which leaves many students <b>without</b> sufficient knowledge of money management, hence why
+            financial literacy class, which leaves many students without sufficient knowledge of money management, hence why
             these resources are so important to the average young person. Read, read, read! It's never too early to start!
             </p>
         </div>
@@ -66,13 +66,70 @@
             <h3>RESOURCE MANAGEMENT</h3>
             <p>Education and saving overlap to create resource management, since proper management
             will include money and the knowledge of how to handle it. However, it is also highly variable, since many
-            career paths will offer very <b>different</b> approaches to resource management. As such, it is important to read up on
+            career paths will offer very different approaches to resource management. As such, it is important to read up on
             services that your ideal job(s) will offer, since many employers have benefits that many employees do not know 
-            about. In general, though, try to consolidate all of your 401ks and other pension benefits into <b>one place</b>, 
+            about. In general, though, try to consolidate all of your 401ks and other pension benefits into one place, 
             so that, even if you have many jobs throught your career, everything will be easily accessible when the time comes.
             </p>
         </div>
+        
+    </div>
 
+    <div class="graph">
+        <img src="https://i.stack.imgur.com/L2q3s.png" alt="Comp. Interest Graph">
+        <p><i>Source: Business Insider</i></p>
+    </div>
+</section>
+
+<section class="external-resources" id="external-resources">
+    <h1>EXTERNAL RESOURCES</h1>
+    <p>This site alone is not enough to provide sufficient information on all of the information you will
+    need to plan a safe and successful retirement. Consider using these sites as extended readings to help you
+    better understand what other options are available to you.
+    <div class ="site">
+        <p><a href="https://www.kiplinger.com/" target="_blank" rel="noopener noreferrer">KIPLINGER</a> is a financial 
+        news site that will occasionally have some very useful retirement
+        info. I would recommend checking at least once a week for new updates.
+        </p>
+    </div>
+    <div class="site">
+        <p><a href="https://www.aarp.org/retirement/planning-for-retirement/" target="_blank" rel="noopener noreferrer">AARP</a> is another news
+        cite that centers exclusively around retirement. There is some good information here if you can 
+        get past the very odd article names. 
+        </p>
+
+    </div>
+    <div class="site">
+        <p><a href="https://www.fidelity.com/retirement-planning/overview" target="_blank" rel="noopener noreferrer">FIDELITY</a> 
+        is another repository of information, much like this one, but it goes into much more
+        depth. Great resource on general planning. 
+        </p>
+    </div>
+    <div class="site">
+        <p>This <a href="https://www.cnbc.com/guide/retirement-planning/" target="_blank" rel="noopener noreferrer">CNBC</a> 
+        article pretty much covers everything from the previous sites in one place.
+        Consider keeping this saved, since it is a useful one-stop repository.
+        </p>
+    </div>
+    </p>
+
+</section>
+<section class="about" id="about">
+    <h1>ABOUT</h1>
+    <p>This site was designed as a service learning project for a Grade 10 English II documentary. The chosen global issue
+    was aging, which encompasses broad topics such as senior services, hospital systems, and (above all else) retirement!
+    There is a clear lack of retirement education, especially for people younger than the age of 20 or so. Plus, the 
+    State of Texas does not offer any standardized classes on financial literacy and/or banking methods. To alleviate this issue,
+    I have decided to take it upon myself to create a simple HTML/CSS webpage to effectively serve as a center for 
+    useful retirement info, targeted moreso at the age demographic of 15-18. Every line of this 
+    page was written from scratch with the intention of being as concise and informative as possible. I can only hope
+    that ONE person recieves some benefit from this page. If you have read this far, THANK YOU! YOUR PATIENCE IS APPRECIATED!
+    </p>
+    <div class="footer">
+        <p>See above for more info on the purpose of this site. <br>
+        This HTML/CSS site was written from scratch and designed by Zachary Hadba, Grade 10 Student at MWS.<br>
+        Contact (in case of any errors): <br> zhadba@gmail.com <br> (512) - 906 - 6432 <br> Created with HTML/CSS 
+        in Visual Studio Code.<p>
     </div>
 </section>
 

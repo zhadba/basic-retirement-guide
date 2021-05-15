@@ -7,6 +7,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.header {
+    overflow: hidden;
+    background-color: black;
+}
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -16,6 +21,7 @@ nav {
 
 .main-title {
     width: 500px;
+    color: white;
 }
 
 .nav-links {
@@ -47,7 +53,7 @@ nav {
 .nav-links ul li a {
     text-decoration: none;
     font-size: 13px;
-    color: black;
+    color: white;
 }
 
 .text-box {
@@ -56,7 +62,7 @@ nav {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
 }
 
 .text-box h1{
@@ -94,6 +100,12 @@ nav .fa{
     .main-title{
         font-size: 8px;
     }
+
+    .header {
+        overflow: hidden;
+        background-color:white;
+    }
+
     .text-box h1{
         font-size: 14px;
     }
@@ -129,9 +141,9 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10px;
     position: relative;
-    transform: translate(0, 225%);
+    transform: translate(0, 50%);
 }
 
 p {
@@ -140,28 +152,89 @@ p {
 }
 
 .row {
-    margin-top: 5%;
+    margin-top: 1%;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
 .method-col {
+    font-size: 12px;
     flex-basis: 31%;
     background: mediumturquoise;
     border-radius: 10px;
     margin-bottom: 5%;
+    margin-top: 0%;
     padding: 20px 12px;
     box-sizing: border-box;
 }
 
 .method-col a {
-    text-decoration: none;
-    color: rgb(0, 0, 255);
+    color: black;
+}
+
+.method-col a:hover {
+    transition: 0.5s;
+    color: blue;
+}
+
+.graph img {
+    width: 70%;
+    height: auto;
+}
+
+.graph p {
+    padding-top: 5px;
+    font-size: 13px;
 }
 
 @media(max-width: 700px){
     .row{
         flex-direction: column;
     }
+}
+
+.external-resources {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    transform: translate(0, 100%);
+}
+
+.site {
+    font-size: 14px;
+    flex-basis: 31%;
+    background: mediumturquoise;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.site a {
+    color: black;
+}
+
+.site a:hover {
+    transition: 0.5s;
+    color: blue;
+}
+
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    transform: translate(0, 130%);
+}
+
+.footer {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 12px;
+    padding-bottom: 100px;
 }
